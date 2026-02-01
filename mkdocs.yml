@@ -3,9 +3,11 @@ site_description: Портфолио # Описание сайта, добавл
 theme: # Тема сайта, информация о ее параметрах
   name: material # Название темы
   logo: images/logo.png # Ссылка на логотип сайта, логотип добавляется в папку `docs/images`
+  extra:
+    favicon: images/logo.png
   font:
-    text: Roboto # Шрифт текста
-    code: Roboto Mono # Шрифт для текста кода
+    text: Inter # Шрифт текста
+    code: Fira Code # Шрифт для текста кода
   language: ru # Язык
   palette: # Настройки светлой и тёмной тем
     # Настройки светлой темы
@@ -13,8 +15,8 @@ theme: # Тема сайта, информация о ее параметрах
       toggle:
         icon: material/weather-sunny # Иконка для активации светлой темы
         name: Выключить солнышко # Всплывающий текст-подсказка
-      primary: blue # Основной цвет
-      accent: purple # Акцентный цвет
+      primary: green # Основной цвет
+      accent: light green # Акцентный цвет
       # вы можете использовать любой цвет из списка: 
       # red; pink; purple; deep purple; indigo; blue; light blue; cyan; teal; 
       # green; light green; lime; yellow; amber; orange; deep orange; brown; 
@@ -25,15 +27,17 @@ theme: # Тема сайта, информация о ее параметрах
       toggle:
         icon: material/weather-night
         name: Позвать солнышко
-      primary: deep purple
-      accent: blue
+      primary: green
+      accent: light green
   features: # настройки функциональностей темы
-    - navigation.sections # Добавление разделов верхнего уровня в боковом меню, отключение спойлеров в боковом меню
+    #- navigation.sections # Добавление разделов верхнего уровня в боковом меню, отключение спойлеров в боковом меню
     - navigation.path # Хлебные крошки
     - navigation.indexes # Позволяет создавать корневые страницы разделов меню. Корневая страница должна лежать в папке раздела и называться index.md. Пример использования корневых страниц приведен ниже в настройках nav
-    - navigation.tabs # Верхнее меню
+    #- navigation.tabs # Верхнее меню
     - navigation.tabs.sticky # Фиксация верхнего меню
-    - navigation.expand # Разворачивает спойлеры в левом меню по умолчанию
+    #- navigation.expand # Разворачивает спойлеры в левом меню по умолчанию
+    - navigation.expand: false
+    - navigation.tracking
     - toc.integrate # Фиксирует оглавление страницы в левом меню
     - navigation.instant # Функция быстрой загрузки страниц
     - navigation.top # Добавляет кнопку «к началу» для быстрой обратной прокрутки страницы
@@ -42,9 +46,10 @@ theme: # Тема сайта, информация о ее параметрах
     - content.code.copy # Кнопка копирования в блоке кода
 
 nav: # Структура сайта
-- Главная страница: 
-  - index.md
-  - Гайды: lenaleto24-instruction.md # вложенные страницы отбиваются отступами
+- Главная страница: index.md
+- Гайды Telegram: 
+  - Отправить отложенное сообщение: instruction1.md
+  - Закрепить сообщение в чате: instruction2.md
 
 markdown_extensions: # Расширения markdown
   - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)

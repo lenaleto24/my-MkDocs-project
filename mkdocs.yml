@@ -73,4 +73,4 @@ plugins:
   - search # Плагин для подключения поиска на портале
   - swagger-ui-tag
   - plantuml:
-      puml_url: https://www.plantuml.com/plantuml/ 
+      puml_url: https://www.plantuml.com/plantuml/

@@ -51,6 +51,7 @@ nav: # Структура сайта
   - Отправить отложенное сообщение: instruction1.md
   - Закрепить сообщение в чате: instruction2.md
 - API-дока: swagger.md
+- Диаграмма PlantUML: plantuml.md
 
 markdown_extensions: # Расширения markdown
   - admonition # Поддержка информационных панелей (сообщений типа «Внимание», «Совет», «Примечание», etc.)
@@ -70,4 +71,6 @@ markdown_extensions: # Расширения markdown
 
 plugins:
   - search # Плагин для подключения поиска на портале
-  - swagger-ui-tag # Плагин для подключения Swagger
+  - swagger-ui-tag
+  - plantuml:
+      puml_url: https://www.plantuml.com/plantuml/
